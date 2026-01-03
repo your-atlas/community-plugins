@@ -8,23 +8,7 @@
       "repo": "your-atlas/atlas-weather",
       "version": "1.0.0",
       "minAtlasVersion": "1.0.0",
-      "downloads": 0,
-      "requiredApiKeys": [
-        {
-          "id": "openweather",
-          "name": "OpenWeather API Key",
-          "description": "Used to fetch current weather and forecasts",
-          "signupUrl": "https://openweathermap.org/api",
-          "required": true
-        },
-        {
-          "id": "googlemaps",
-          "name": "Google Maps API Key", 
-          "description": "Used for location search and geocoding",
-          "signupUrl": "https://console.cloud.google.com/apis/credentials",
-          "required": true
-        }
-      ]
+      "downloads": 0
     }
   ],
   "lastUpdated": "2026-01-02T00:00:00Z"
