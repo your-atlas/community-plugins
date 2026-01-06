@@ -6,7 +6,7 @@
       "description": "Weather forecasts for your location and saved locations",
       "author": "Ryan-Milton",
       "repo": "your-atlas/atlas-weather",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "minAtlasVersion": "1.0.0",
       "downloads": 0
     },
