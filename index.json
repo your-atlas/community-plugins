@@ -14,6 +14,7 @@
       "repository": "https://github.com/knosys-app/atlas-weather",
       "downloadUrl": "https://github.com/knosys-app/atlas-weather/releases/download/v2.1.0/knosys-weather-2.1.0.tgz",
       "downloadSha256": "90a95acacd07a034dc917ec5d8f7cf47c9d4319a986eed3262aabe3f882c6b44",
+      "minHostVersion": "2.1.0",
       "permissions": ["network", "vault:read", "vault:write"],
       "requiredApiKeys": [
         {
