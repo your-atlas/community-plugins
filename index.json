@@ -1,64 +1,58 @@
 {
   "schemaVersion": 1,
-  "fetchedAt": "2026-05-03T19:14:00Z",
+  "fetchedAt": "2026-05-21T00:00:00Z",
   "plugins": [
     {
       "id": "knosys-weather",
       "name": "Weather",
-      "description": "Weather forecasts for your location and saved locations.",
+      "description": "Weather forecasts, saved locations, and current-location tracking — fully self-contained.",
       "author": "Knosys",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "knosysApi": 2,
       "categories": ["weather", "data"],
       "homepage": "https://github.com/knosys-app/atlas-weather",
       "repository": "https://github.com/knosys-app/atlas-weather",
-      "downloadUrl": "https://github.com/knosys-app/atlas-weather/releases/download/v2.0.0/knosys-weather-2.0.0.tgz",
-      "downloadSha256": "d2ce87e3e9eae4f7c25366e0534c813167507edf7397ba982d936a04040db1d9",
-      "permissions": ["network", "storage", "core:locations"],
+      "downloadUrl": "https://github.com/knosys-app/atlas-weather/releases/download/v2.1.0/knosys-weather-2.1.0.tgz",
+      "downloadSha256": "90a95acacd07a034dc917ec5d8f7cf47c9d4319a986eed3262aabe3f882c6b44",
+      "minHostVersion": "2.1.0",
+      "permissions": ["network", "vault:read", "vault:write"],
       "requiredApiKeys": [
         {
           "id": "openweather",
           "name": "OpenWeather API Key",
-          "description": "Used to fetch current weather and forecasts.",
+          "description": "Used to fetch current weather, forecasts, and location search (Geocoding API).",
           "signupUrl": "https://openweathermap.org/api",
           "required": true
         },
         {
-          "id": "googlemaps",
+          "id": "google_maps",
           "name": "Google Maps API Key",
-          "description": "Used for location search and geocoding.",
+          "description": "Optional — improves reverse-geocoding accuracy when resolving coordinates to a place name.",
           "signupUrl": "https://console.cloud.google.com/apis/credentials",
-          "required": true
+          "required": false
         }
       ]
     },
     {
       "id": "knosys-maps",
       "name": "Maps",
-      "description": "Offline maps with downloadable regions.",
+      "description": "Self-contained map viewer with online tiles. Offline regions return in v2.2.0.",
       "author": "Knosys",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "knosysApi": 2,
       "categories": ["maps", "data"],
       "homepage": "https://github.com/knosys-app/atlas-maps",
       "repository": "https://github.com/knosys-app/atlas-maps",
-      "downloadUrl": "https://github.com/knosys-app/atlas-maps/releases/download/v2.0.0/knosys-maps-2.0.0.tgz",
-      "downloadSha256": "f9c6b28f4142fd0e544e68e34562ae7e2966b2e0a5e2e6d827d0ba0e5cad74e4",
-      "permissions": ["network", "storage", "filesystem", "core:locations"],
+      "downloadUrl": "https://github.com/knosys-app/atlas-maps/releases/download/v2.1.0/knosys-maps-2.1.0.tgz",
+      "downloadSha256": "743ada1080822fea1a83cfa8f7bc7f6d8d508ec17c01f2847ca0b5a4aa02c007",
+      "permissions": ["network"],
       "requiredApiKeys": [
         {
           "id": "maptiler",
           "name": "MapTiler API Key",
-          "description": "Required for downloading map tiles and styles for offline use.",
+          "description": "Optional — unlocks the MapTiler tile provider with more styles and higher zoom. Without it the plugin falls back to OpenFreeMap (no key required).",
           "signupUrl": "https://cloud.maptiler.com/account/keys",
-          "required": true
-        },
-        {
-          "id": "google_maps",
-          "name": "Google Maps API Key",
-          "description": "Required for geocoding (converting addresses to coordinates).",
-          "signupUrl": "https://console.cloud.google.com/apis/credentials",
-          "required": true
+          "required": false
         }
       ]
     },
