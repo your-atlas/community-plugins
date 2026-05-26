@@ -9,13 +9,20 @@
       "author": "Knosys",
       "version": "2.1.0",
       "knosysApi": 2,
-      "categories": ["weather", "data"],
+      "categories": [
+        "weather",
+        "data"
+      ],
       "homepage": "https://github.com/knosys-app/atlas-weather",
       "repository": "https://github.com/knosys-app/atlas-weather",
       "downloadUrl": "https://github.com/knosys-app/atlas-weather/releases/download/v2.1.0/knosys-weather-2.1.0.tgz",
       "downloadSha256": "90a95acacd07a034dc917ec5d8f7cf47c9d4319a986eed3262aabe3f882c6b44",
       "minHostVersion": "2.1.0",
-      "permissions": ["network", "vault:read", "vault:write"],
+      "permissions": [
+        "network",
+        "vault:read",
+        "vault:write"
+      ],
       "requiredApiKeys": [
         {
           "id": "openweather",
@@ -36,24 +43,26 @@
     {
       "id": "knosys-maps",
       "name": "Maps",
-      "description": "Self-contained map viewer with online tiles. Offline regions return in v2.2.0.",
+      "description": "Offline driving navigation — routes (v3.0), turn-by-turn + GPS (v3.1+).",
       "author": "Knosys",
-      "version": "2.1.0",
-      "knosysApi": 2,
-      "categories": ["maps", "data"],
+      "version": "3.0.0-alpha.1",
+      "knosysApi": 3,
+      "categories": [
+        "maps",
+        "data"
+      ],
       "homepage": "https://github.com/knosys-app/atlas-maps",
       "repository": "https://github.com/knosys-app/atlas-maps",
-      "downloadUrl": "https://github.com/knosys-app/atlas-maps/releases/download/v2.1.0/knosys-maps-2.1.0.tgz",
-      "downloadSha256": "743ada1080822fea1a83cfa8f7bc7f6d8d508ec17c01f2847ca0b5a4aa02c007",
-      "permissions": ["network"],
-      "requiredApiKeys": [
-        {
-          "id": "maptiler",
-          "name": "MapTiler API Key",
-          "description": "Optional — unlocks the MapTiler tile provider with more styles and higher zoom. Without it the plugin falls back to OpenFreeMap (no key required).",
-          "signupUrl": "https://cloud.maptiler.com/account/keys",
-          "required": false
-        }
+      "downloadUrl": "https://github.com/knosys-app/atlas-maps/releases/download/v3.0.0-alpha.1/knosys-maps-3.0.0-alpha.1.tgz",
+      "downloadSha256": "40b5503cff9a31fa36bc13091105d0617e0ae73ad232352d16e05891c9a0c6d4",
+      "permissions": [
+        "storage",
+        "network",
+        "vault:read",
+        "vault:write",
+        "sqlite:read",
+        "sqlite:write",
+        "routing:engine"
       ]
     },
     {
@@ -63,12 +72,19 @@
       "author": "Knosys",
       "version": "2.0.0",
       "knosysApi": 2,
-      "categories": ["aviation", "planning"],
+      "categories": [
+        "aviation",
+        "planning"
+      ],
       "homepage": "https://github.com/knosys-app/knosys-flight-planner",
       "repository": "https://github.com/knosys-app/knosys-flight-planner",
       "downloadUrl": "https://github.com/knosys-app/knosys-flight-planner/releases/download/v2.0.0/knosys-flight-planner-2.0.0.tgz",
       "downloadSha256": "8fb48642a79747dc2b921b03d9f68d412d20845d400c40b42b592e742cb8aa7f",
-      "permissions": ["storage", "network", "core:locations"]
+      "permissions": [
+        "storage",
+        "network",
+        "core:locations"
+      ]
     },
     {
       "id": "knosys-fitness",
@@ -77,12 +93,18 @@
       "author": "Knosys",
       "version": "2.0.0",
       "knosysApi": 2,
-      "categories": ["health", "tracking"],
+      "categories": [
+        "health",
+        "tracking"
+      ],
       "homepage": "https://github.com/knosys-app/knosys-fitness",
       "repository": "https://github.com/knosys-app/knosys-fitness",
       "downloadUrl": "https://github.com/knosys-app/knosys-fitness/releases/download/v2.0.0/knosys-fitness-2.0.0.tgz",
       "downloadSha256": "0843e853f7a947f1b88c42403666f41a3f2e0597dd5e96f51b0dc311c0e10aae",
-      "permissions": ["storage", "network"],
+      "permissions": [
+        "storage",
+        "network"
+      ],
       "requiredApiKeys": [
         {
           "id": "usda",
@@ -107,12 +129,19 @@
       "author": "Ryan Milton",
       "version": "2.0.0",
       "knosysApi": 2,
-      "categories": ["media", "ingest"],
+      "categories": [
+        "media",
+        "ingest"
+      ],
       "homepage": "https://github.com/knosys-app/knosys-tiktok-downloader",
       "repository": "https://github.com/knosys-app/knosys-tiktok-downloader",
       "downloadUrl": "https://github.com/knosys-app/knosys-tiktok-downloader/releases/download/v2.0.0/knosys-tiktok-2.0.0.tgz",
       "downloadSha256": "73e5e79a12c45979456c92f3ae918920eb261483db58f6877f64ff3beded33f3",
-      "permissions": ["network", "storage", "filesystem"]
+      "permissions": [
+        "network",
+        "storage",
+        "filesystem"
+      ]
     }
   ]
 }
