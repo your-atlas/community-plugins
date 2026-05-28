@@ -45,7 +45,7 @@
       "name": "Maps",
       "description": "[ALPHA] Offline driving navigation with route preview. Stores per-region routing tiles, vector map tiles, and an address geocoder in your vault. Turn-by-turn + GPS ship in v3.1.",
       "author": "Knosys",
-      "version": "3.0.0-alpha.4",
+      "version": "3.0.0-alpha.5",
       "knosysApi": 3,
       "categories": [
         "maps",
@@ -53,8 +53,8 @@
       ],
       "homepage": "https://github.com/knosys-app/atlas-maps",
       "repository": "https://github.com/knosys-app/atlas-maps",
-      "downloadUrl": "https://github.com/knosys-app/atlas-maps/releases/download/v3.0.0-alpha.4/knosys-maps-3.0.0-alpha.4.tgz",
-      "downloadSha256": "2c0b25942da39bab9c5eec869e97e1f233d231d82e8f106adb2236e36d46bf3d",
+      "downloadUrl": "https://github.com/knosys-app/atlas-maps/releases/download/v3.0.0-alpha.5/knosys-maps-3.0.0-alpha.5.tgz",
+      "downloadSha256": "ce1ecfd8d31df117aa1d64f93598e9321aa0426faf2a0658c8550136c67be838",
       "permissions": [
         "storage",
         "network",
